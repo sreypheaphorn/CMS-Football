@@ -2,9 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const footballerRoutes = require('./route/footballerRoutes');
 const userRoutes = require('./route/userRoutes');
-const dotenv = require('dotenv');
+require('dotenv').config();
 
-require('dotenv').config();  
 
 const app = express();
 app.use(express.json());  
